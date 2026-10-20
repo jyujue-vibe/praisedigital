@@ -10,7 +10,7 @@
     <title>RoundDiff — Version-Diff for After Effects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <style>
       :root {
         --bg: #f6f7f5;
@@ -65,7 +65,8 @@
         margin: 0;
         background: var(--bg);
         color: var(--ink);
-        font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-family: "Inter Display", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-feature-settings: 'ss01' on, 'cv05' on, 'cv06' on, 'cv08' on, 'cv11' on;
         font-size: 17px;
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
@@ -77,7 +78,7 @@
       ::selection { background: var(--accent); color: var(--accent-ink); }
 
       .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
-      .mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+      .mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-feature-settings: normal; }
 
       /* ---------- header ---------- */
       header.site {
@@ -91,7 +92,7 @@
         height: 60px;
       }
       .wordmark {
-        font-family: "IBM Plex Mono", monospace;
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal;
         font-weight: 600; font-size: 18px; letter-spacing: -0.01em;
         color: var(--ink);
         display: inline-flex; align-items: center; gap: 9px;
@@ -129,7 +130,7 @@
       .hero { padding: 88px 0 72px; }
       .status-pill {
         display: inline-flex; align-items: center; gap: 8px;
-        font-family: "IBM Plex Mono", monospace; font-size: 13px;
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 13px;
         color: var(--ink-2);
         border: 1px solid var(--line-strong); border-radius: 999px;
         padding: 6px 14px 6px 11px;
@@ -156,13 +157,13 @@
       .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 34px; }
       .price-badge {
         display: inline-flex; align-items: baseline; gap: 8px;
-        font-family: "IBM Plex Mono", monospace;
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal;
       }
       .price-badge .amount { font-size: 26px; font-weight: 600; color: var(--ink); }
       .price-badge .terms { font-size: 13.5px; color: var(--ink-3); }
       .hero-meta {
         margin-top: 22px; color: var(--ink-3); font-size: 14.5px;
-        font-family: "IBM Plex Mono", monospace;
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal;
       }
 
       /* example output readout */
@@ -178,12 +179,12 @@
         display: flex; align-items: center; gap: 10px;
         padding: 11px 16px;
         border-bottom: 1px solid #232a35;
-        font-family: "IBM Plex Mono", monospace; font-size: 12.5px;
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 12.5px;
         color: var(--code-dim); letter-spacing: .04em; text-transform: uppercase;
       }
       .readout-head .count { margin-left: auto; text-transform: none; letter-spacing: 0; }
       .readout-head .count b { color: var(--code-ink); font-weight: 600; }
-      .readout ul { padding: 10px 0; font-family: "IBM Plex Mono", monospace; font-size: 13.5px; line-height: 1.5; }
+      .readout ul { padding: 10px 0; font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 13.5px; line-height: 1.5; }
       .readout li {
         display: flex; gap: 12px; padding: 5px 16px;
         color: var(--code-ink); line-height: 1.5;
@@ -191,13 +192,13 @@
       .readout li > span { min-width: 0; }
       .readout-foot {
         padding: 10px 16px; border-top: 1px solid #232a35;
-        font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--code-dim);
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 12.5px; color: var(--code-dim);
       }
 
       /* ---------- sections ---------- */
       section.block { padding: 84px 0; border-top: 1px solid var(--line); }
       .sec-label {
-        font-family: "IBM Plex Mono", monospace; font-size: 13px;
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 13px;
         letter-spacing: .09em; text-transform: uppercase; color: var(--accent);
         margin-bottom: 14px; font-weight: 600;
       }
@@ -218,7 +219,7 @@
         font-size: 15.5px;
       }
       .use-list li + li { border-top: 1px solid var(--line); }
-      .use-list .k { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--accent); flex: none; padding-top: 2px; }
+      .use-list .k { font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 12px; color: var(--accent); flex: none; padding-top: 2px; }
       .use-list .v { color: var(--ink-2); }
       .use-list .v b { color: var(--ink); font-weight: 600; display: block; font-size: 16px; }
 
@@ -237,7 +238,7 @@
       .card .icon svg { width: 21px; height: 21px; }
       .card h3 { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 8px; }
       .card p { color: var(--ink-2); font-size: 15.5px; line-height: 1.55; }
-      .card p .ex { font-family: "IBM Plex Mono", monospace; font-size: 13.5px; color: var(--ink); }
+      .card p .ex { font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 13.5px; color: var(--ink); }
 
       /* workflow */
       .workflow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 44px; }
@@ -259,7 +260,7 @@
       .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 44px; counter-reset: step; }
       .step { padding: 6px 4px 0; }
       .step .num {
-        font-family: "IBM Plex Mono", monospace; font-size: 14px; font-weight: 600;
+        font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 14px; font-weight: 600;
         color: var(--accent);
         display: inline-flex; align-items: center; justify-content: center;
         width: 34px; height: 34px; border: 1.5px solid var(--accent); border-radius: 50%;
@@ -292,7 +293,7 @@
       }
       .shot svg { width: 34px; height: 34px; color: var(--ink-3); }
       .shot .shot-label { font-weight: 600; font-size: 16px; }
-      .shot .shot-note { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3); letter-spacing: .03em; }
+      .shot .shot-note { font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 12.5px; color: var(--ink-3); letter-spacing: .03em; }
 
       /* pricing */
       .pricing-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
@@ -300,7 +301,7 @@
         background: var(--surface); border: 1px solid var(--line-strong);
         border-radius: 14px; padding: 36px 34px;
       }
-      .price-card .plan { font-family: "IBM Plex Mono", monospace; font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); }
+      .price-card .plan { font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); }
       .price-card .price { display: flex; align-items: baseline; gap: 10px; margin: 14px 0 4px; }
       .price-card .price .amount { font-size: 56px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
       .price-card .price .per { color: var(--ink-3); font-size: 15px; }
@@ -335,7 +336,7 @@
       footer .built b { color: var(--ink); font-weight: 600; }
       footer .support { font-size: 15px; color: var(--ink-2); }
       footer .support .mono { font-size: 14px; }
-      footer .foot-meta { width: 100%; margin-top: 8px; font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+      footer .foot-meta { width: 100%; margin-top: 8px; font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; font-feature-settings: normal; }
 
       /* ---------- responsive ---------- */
       @media (max-width: 900px) {
