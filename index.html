@@ -98,16 +98,7 @@
         display: inline-flex; align-items: center; gap: 9px;
       }
       .wordmark:hover { text-decoration: none; }
-      .wordmark .glyph {
-        width: 22px; height: 22px; flex: none;
-        border: 1.5px solid var(--accent); border-radius: 6px;
-        position: relative;
-      }
-      .wordmark .glyph::before, .wordmark .glyph::after {
-        content: ""; position: absolute; left: 4px; right: 4px; height: 1.5px; background: var(--accent);
-      }
-      .wordmark .glyph::before { top: 6px; }
-      .wordmark .glyph::after { top: 12px; background: var(--removed); }
+      .wordmark .glyph-img { width: 22px; height: 22px; flex: none; display: block; }
       .nav nav { display: flex; gap: 24px; margin-left: auto; }
       .nav nav a { color: var(--ink-2); font-size: 15px; font-weight: 500; }
       .nav nav a:hover { color: var(--ink); text-decoration: none; }
@@ -360,7 +351,7 @@
   <body>
     <header class="site">
       <div class="wrap nav">
-        <a class="wordmark" href="#top"><span class="glyph" aria-hidden="true"></span>RoundDiff</a>
+        <a class="wordmark" href="#top"><img class="glyph-img" src="/favicon.svg" alt="" aria-hidden="true" />RoundDiff</a>
         <nav aria-label="Page sections">
           <a href="#features">Features</a>
           <a href="#workflow">Workflow</a>
